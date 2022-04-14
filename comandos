@@ -21,8 +21,14 @@ $git remote add origin #"el repostory que cree"
 $git add diff #lo que cambie
 $git add . / "" # añadir a lo que debe ser confirmado
 $git commit -m "" 
+#puedo hacer los dos juntos :
+$git commit -am  ""
 $git push "origin" #llevarlo a GITHUB
 $git log #ver los commits que hice
 $git status 
-$git checkout -b "rama_nueva_caracteristica" 
+$git checkout -b "rama_nueva_caracteristica" >> "" #los cambios en la rama no se reflejan en main
 $git branch -a
+$echo "Una nueva linea en rama_nueva_caracteristica" 
+$git checkout main  #para cambiar de rama/main
+#estando en un branch hago git push para llevarlo al repositorio local
+#hago pull request para comparar y hacer merge.
