@@ -1,25 +1,28 @@
-COMANDO BASICOS BASH
+#COMANDO BASICOS BASH
 
-$ls = mostrar listado
+$ls # mostrar listado
 	$ls -a
 	$ls -l
-$touch = crear archivo
-$mkdir = crear directorio
-$cd = ir a directorio
-	$cd .. para ir a la carpeta anterior
-	$cd tab para autocompletar
-$rm = eliminar
-	$rm -r = eliminar directorio
+$touch # crear archivo
+$mkdir # crear directorio
+$cd # ir a directorio
+	$cd .. #para ir a la carpeta anterior
+	$cd tab #para autocompletar
+$rm #eliminar
+	$rm -r # eliminar directorio
 $pwd imprimir directorio actual
 
 #SSH me define la compu de manera unica. 
 
 CREAR UN REPOSITORIO
-$git init
-$git branch -M main
-$git add . / ""
-$git remote add origin "el repostory que cree"
-$git commit -m ""
-$git push origin
-
-$git status
+$git init    #inicializacion
+$git branch -M main #cambiar nombre a main
+$git remote add origin #"el repostory que cree"
+$git add diff #lo que cambie
+$git add . / "" # añadir a lo que debe ser confirmado
+$git commit -m "" 
+$git push "origin" #llevarlo a GITHUB
+$git log #ver los commits que hice
+$git status 
+$git checkout -b "rama_nueva_caracteristica" 
+$git branch -a
